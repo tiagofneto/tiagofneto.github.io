@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ $dateHuman := .Date | time.Format "January 02, 2006" }}
+  <i><time datetime="{{ $dateHuman }}">{{ $dateHuman }}</time></i>
+
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+{{ end }}

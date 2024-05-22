@@ -1,0 +1,13 @@
+{{- with index site.Menus .menuID }}
+  {{- $menuLen := len . -}}
+  <nav>
+    <ul>
+      {{- range $k, $v := . }}
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{- if lt $k (sub $menuLen 1) }}&middot;{{ end -}}
+      {{- end }}
+    </ul>
+  </nav>
+{{- end }}

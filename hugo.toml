@@ -1,0 +1,28 @@
+baseURL = 'https://tiagofneto.com/'
+languageCode = 'en-us'
+title = 'Tiago Neto'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'PGP'
+pageRef = '/pgp'
+weight = 30
+
+[[menus.main]]
+name = 'Contact'
+pageRef = '/contact'
+weight = 40
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
