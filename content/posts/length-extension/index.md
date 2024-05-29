@@ -53,13 +53,13 @@ Length extension attacks exploit a property of the Merkle-Damgård construction 
 The attacker chooses arbitrary data $D$ to append to the original message. The appended message will be added after the original padding. The overall forged message will also need padding, considering the original padded message length $|M^{\prime}|$ (which only depends on the length of the original message, $|M|$). The forged message will look like $M \Vert P \Vert D \Vert P^{\prime}$.
 
 ### Step 2: Hashing
-The attacker extends the original digest by setting $H_0$ to the original digest $H(M)$ and hashing the new padded data $D \Vert P^{\prime}$. This results in $H(M^{\prime} \Vert D)$, successfuly extending the orignal hash, without knowing the contents of $M$.
+The attacker extends the original digest by setting $H_0$ to the original digest $H(M)$ and hashing the new padded data $D \Vert P^{\prime}$. This results in $H(M^{\prime} \Vert D)$, successfully extending the original hash, without knowing the contents of $M$.
 
 
 ## Example: Message Authentication Codes
 This attack can be particularly problematic in a poorly designed MAC ([Message Authentication Code](https://en.wikipedia.org/wiki/Message_authentication_code)) system.
 
-Suppose an authentication mechanism uses a secret key for each user (known only to each user and the server). To attest the authenticity of some data, users produce signatures using their secret key and a hash function:
+Suppose an authentication mechanism uses a secret key for each user (known only to each user and the server). To attest to the authenticity of some data, users produce signatures using their secret key and a hash function:
 
 $$
 \begin{array}{l}
