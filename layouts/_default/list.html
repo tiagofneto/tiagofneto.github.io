@@ -4,7 +4,7 @@
   <ul>
   {{ range .Pages }}
     {{ $dateHuman := .Date | time.Format "Jan 02, 2006" }}
-    <li><time datetime="{{ $dateHuman }}">{{ $dateHuman }}</time> &middot <h2 style="display: inline;">
+    <li><time datetime="{{ $dateHuman }}">{{ $dateHuman }}</time> &middot <h3 style="display: inline;">
         <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
       </h2>
     </li>
