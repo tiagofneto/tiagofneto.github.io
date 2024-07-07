@@ -1,0 +1,24 @@
+<span id="location-{{ .Ordinal }}">Fetching location...</span>
+
+<script>
+(function() {
+  var locationId = "location-{{ .Ordinal }}";
+  function fetchLocation() {
+    fetch('https://api.tiagofneto.com/location')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById(locationId).textContent = data;
+      })
+      .catch(error => {
+        console.error('Error fetching location:', error);
+        document.getElementById(locationId).textContent = 'Unable to fetch location';
+      });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fetchLocation);
+  } else {
+    fetchLocation();
+  }
+})();
+</script>

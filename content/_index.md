@@ -8,5 +8,7 @@ Currently, I am focused on ideation and prototyping, figuring out my next steps.
 
 **Interests:** applied cryptography (focus on zero-knowledge), blockchain infrastructure, privacy-enhancing technologies, operating systems.
 
+I am currently in: *{{< location >}}*
+
 [GitHub](https://github.com/tiagofneto) | [X](https://x.com/0xtiagofneto)
 
