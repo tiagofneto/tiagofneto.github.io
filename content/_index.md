@@ -8,7 +8,5 @@ Currently exploring. Previously, I was a Founding Engineer at [Herodotus](https:
 
 **Interests:** data portability, applied cryptography, privacy-enhancing technologies, operating systems.
 
-I am currently in: *{{< location >}}*
-
 [GitHub](https://github.com/tiagofneto) | [X](https://x.com/0xtiagofneto)
 
