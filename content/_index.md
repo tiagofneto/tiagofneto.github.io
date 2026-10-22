@@ -8,5 +8,5 @@ Currently working in stealth on quantitative macro growth for the biggest econom
 
 **Interests:** data portability, privacy-enhancing technologies, operating systems, geography, longevity.
 
-[GitHub](https://github.com/tiagofneto) | [X](https://x.com/0xtiagofneto)
+[GitHub](https://github.com/tiagofneto) | [X](https://x.com/tiagoneto)
 
